@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shapee2"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Data From Database"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+
+
+
+<androidx.cardview.widget.CardView
+
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+android:layout_marginTop="100dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="30dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:id="@+id/name" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Email:"
+      android:layout_below="@+id/name"
+      android:textStyle="bold"
+      android:id="@+id/email"/>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:id="@+id/myName"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading...."
+        android:layout_marginStart="50dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/myName"
+        android:id="@+id/myEmail"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:background="@drawable/btn_shape"
+        android:src="@drawable/baseline_keyboard_double_arrow_right_24"
+       android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30sp"
+        android:id="@+id/logoutBtn"/>
+
+</RelativeLayout>

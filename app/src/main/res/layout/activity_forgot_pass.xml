@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+    tools:context=".forgotPassAct">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset-Page"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="350dp"
+        android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            android:layout_marginStart="20dp"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:id="@+id/resetEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:paddingEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#4DFFFFFF"
+            android:drawableLeft="@drawable/baseline_mail_outline_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="#B3FFFFFF"
+            android:elevation="60sp"
+            android:hint="Enter your Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="7dp"
+            android:textColorHint="#CCFAF7F7" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/resetEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:text="RESET"
+            android:background="@drawable/btn_shape"
+            android:textColor="#0399FD"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:id="@+id/resetBtn"/>
+
+    </RelativeLayout>
+</RelativeLayout>
